@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .header {
+    width: 100%;
+    height: 50px;
+    background-color: #253b86;
+    padding: 0px;
+    padding-right: 50px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(150, 150, 150);
+    padding: 0px;
+    padding-right: 50px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding-left: 0px;
+    padding-top: auto;
+    padding-bottom: auto;
+  }
+  nav {
+    flex: 1;
+    text-align: right;
+  }
+
+  .navbar {
+    list-style: none;
+    display: inline-block;
+  }
+
+  .links {
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: capitalize;
+  }
+  .box {                                                                                 /* for upcoming events */
+    background-color: rgb(243, 242, 242);
+    width: 90%;
+    height: auto;
+    margin: 65px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 0%;
+  }
+  .center {
+    display: block;
+    width: 90%;
+    margin-left: 65px;
+  }
+  .p1 {
+    font-family: monospace;
+    margin-bottom: 40px;
+    color: #253b86;
+  }
+  .button {
+    background-color: #253b86;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .box2{                                                                                    /*for archive */
+    background-color: rgb(243, 242, 242);
+    width:90%;
+    height:100%;
+    margin:65px;
+    margin-top:0%;
+    margin-bottom:0px;
+    /*display: flexbox;
+    display:center;*/
+    padding-right: 120px;
+    
+  }
+
+  /* Parent Container */                                                                    /*For Archives pair*/
+  .content_img {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  /* Child Text Container */
+  .content_img div {
+    position: absolute;
+    bottom: 0%;
+    background: rgb(59, 59, 58);
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: sans-serif;
+    opacity: 30;
+    visibility:hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+
+  /* Hover on Parent Container */
+  .content_img:hover {
+    cursor: pointer;
+  }
+
+  .content_img:hover div {
+    width: 100%;
+    height: 40%;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 40%;
+  } 
+
+
+  /*------------------------*/
+                                                                                                /*For images side-by-side*/
+  .parent {
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-between; */
+  }
+  .child {
+    flex: 50%;
+    margin-left:145px ;
+    margin-right:100px ; 
+  }
